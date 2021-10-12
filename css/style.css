@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: rgb(214, 214, 214);
+    /* background-color: black; */
+  width: 100%;
+  height: 100%;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+/* CONTAINER FAZER PEDIDOS */
+
+.container-fPedidos{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 3%;
+    margin-left: 40px;
+    width: 45%;
+    height: 27%;
+    border-radius: 6px;
+    box-shadow: 2px 2px 15px gray;
+    min-height: 180px;
+    min-width: 520px;
+}
+
+/* CONTAINER FAZER PEDIDOS */
+
+/* TITULO FAZER PEDIDOS */
+.fPedidos-titulo{
+    user-select: none;
+    border-radius: 6px;
+    background-color: #6610f2;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    box-shadow: 0px 5px 12px rgb(58, 58, 58);
+}
+
+.fPedidos-titulo h1{
+    position: relative;
+    color: white;
+    top: 5px;
+    padding-top: 3px;
+
+}
+/* TITULO FAZER PEDIDOS */
+
+/* FORM FAZER PEDIDOS */
+.container-fPedidos form {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.container-fPedidos form input {
+    height: 40px;
+    width: 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+    border: 2px solid #988b7a;
+    outline: none;
+    transition: .2s ease-in;
+}
+
+.container-fPedidos form input[type = "submit"]{
+    width: 34%;
+    cursor: pointer;
+}
+
+.container-fPedidos form input[type = "submit"]:disabled{
+    cursor: no-drop;
+}
+
+.container-fPedidos form input[type = "submit"]:hover{
+    height: 45px;
+    width: 32%;
+    transition: .2s ease-in-out;
+}
+/* FORM FAZER PEDIDOS */
+
+/* CONTAINER PEDIDOS FEITOS */
+.container-pedidos{
+    position: absolute;
+    width: 24%;
+    height: 95%;
+    background-color: black;
+    top: 3%;
+    margin-left: 675px;
+    min-height: 626px;
+    min-width: 350px;
+    box-shadow: 2px 2px 15px gray;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+/* CONTAINER PEDIDOS FEITOS */
+
+/* PEDIDOS FEITOS TITULO */
+.pedidos-titulo{
+    user-select: none;
+    border-radius: 6px;
+    background-color: #0d6efd;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    box-shadow: 0px 5px 25px rgb(58, 58, 58);
+}
+
+
+.pedidos-titulo h1{
+    position: relative;
+    color: white;
+    top: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+/* PEDIDOS FEITOS TITULO */
+
+/* CONTAINER LUCRO */
+.container-lucro{
+    position: absolute;
+    width: 22%;
+    height: 95%;
+    background-color: black;
+    top: 3%;
+    margin-left: 1045px;
+    min-height: 626px;
+    box-shadow: 2px 2px 15px gray;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+/* CONTAINER LUCRO */
+
+/* CONTAINER LUCRO TITULO */
+.lucro-titulo{
+    user-select: none;
+    border-radius: 6px;
+    background-color: #35b653;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    box-shadow: 0px 5px 12px rgb(58, 58, 58);
+
+}
+
+.lucro-titulo h1{
+    position: relative;
+    color: white;
+    top: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+/* CONTAINER LUCRO TITULO */
+
+/* LUCRO */
+.container-lucro .input-lucro{
+    color: black;
+    width: 45%;
+    min-width: 22%;
+    height: 25px;
+    margin-top: 15px;
+    padding-right: 8px;
+    border: 2px solid #988b7a;
+    outline: none;
+    transition: .2s ease-in;
+    text-align: center;
+}
+
+.input-lucro.C{
+    margin-left: 65px;
+}
+
+.input-lucro.D{
+    margin-left: 66px;
+}
+
+.input-lucro.AV{
+    margin-left: 58px;
+}
+
+.container-lucro h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* LUCRO */
+
+/* CONTAINER DA TABELA */
+
+.tabela-container {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    min-width: 520px;
+    min-height: 425px;
+    top: 220px;
+    margin-left: 40px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 15px gray;
+    text-align: center;
+}
+
+
+/* CONTAINER DA TABELA*/
+
+
+/* AÇÕES DA TABELA */
+
+.tabela-acoes {
+    
+    border-radius: 6px;
+    background-color: rgb(141, 141, 146);
+    width: 100%;
+    height: 60px;
+}
+
+.busca {
+    color: white;
+    background-color: rgb(58, 58, 58);
+    border-radius: 6px;
+    border: unset;
+    outline: none;
+    width: 44%;
+    min-width: 22%;
+    height: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 2px 2px 15px rgb(58, 58, 58);
+}
+
+.botao {
+    color: white;
+    margin-top: 15px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 6px;
+    width: 14%;
+    height: 30px;
+    margin-left: 1%;
+    box-shadow: 2px 2px 15px rgb(58, 58, 58);
+    transition:  .2s ease-in;
+    cursor: pointer;
+}
+
+.botao:hover{
+    width: 15%;
+    height: 35px;
+    transition: .2s ease-in-out;
+}
+
+
+/* AÇÕES DA TABELA */
+
+/* TABELA PEDIDOS */
+.tabelaPedidos-container {
+    margin-top: 10px;
+    width: 100%;
+    max-height: 440px;
+    background-color: rgba(164, 164, 164, 0.2);
+    border-radius: 6px;
+    overflow: scroll;
+}
+
+.container-pedidos .botaoPag{
+    position: relative;
+    left: 160px;
+    width: 50%;
+    min-width: 22%;
+    height: 25px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 8px;
+    border: 2px solid #988b7a;
+    outline: none;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.container-pedidos p{
+    width: 100%;
+    margin-top: 2px;
+    text-align: center;
+    float: left;
+}
+
+.container-pedidos .botaoPag:hover{
+    height: 35px;
+    transition: .2s ease-in-out;
+}
+
+.container-pedidos .botaoPag:disabled{
+    cursor: no-drop;
+}
+
+.container-pedidos .input-total{
+    color: black;
+    width: 55%;
+    min-width: 22%;
+    height: 25px;
+    margin-left: 55px;
+    margin-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px solid #988b7a;
+    outline: none;
+    transition: .2s ease-in;
+    text-align: center;
+}
+
+.container-pedidos .selectPag{
+    border: 2px solid #988b7a;
+    border-radius: 6px;
+    outline: none;
+    width: 30%;
+    min-width: 22%;
+    height: 25px;
+    margin-left: 35px;
+    margin-top: 8px;   
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 3px 3px 2px rgb(58, 58, 58);
+}
+
+/* TABELA PEDIDOS */
+
+/* TABELA DE PRODUTOS */
+
+.tabela {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    max-height: 330px;
+    background-color: rgba(164, 164, 164, 0.2);
+    border-radius: 6px;
+    overflow: scroll;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+}
+
+.tabela td {
+    cursor: pointer;
+}
+tr:nth-child(even) {
+    background-color: rgb(215, 214, 214)
+}
+
+th {
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(93, 94, 96);
+    color: white;
+}
+
+.tabela.ocultar{
+    display: none;
+}
+
+/* TABELA DE PRODUTOS */
+
+
+/* MODAL CONTAINER */
+
+.modal-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 100%;
+    min-height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+
+/* MODAL CONTAINER */
+
+
+/* MODAL */
+
+.modal {
+    position: relative;
+    background-color: white;
+    width: 32%;
+    height: 50%;
+    min-width: 380px;
+    min-height: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 10px white;
+    border: 10px solid #988b7a;
+}
+
+@keyframes abreModal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: abreModal .3s;
+}
+
+.modal h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    user-select: none;
+}
+
+.modal .fechar {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    min-width: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: #988b7a;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+    transition: .2s ease-in;
+}
+
+.modal .fechar:hover{
+    width: 55px;
+    height: 55px;
+    transition: .2s ease-in-out;
+}
+
+.modal form {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.modal form input {
+    height: 48px;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+    border: 2px solid #988b7a;
+    outline: none;
+    transition: .2s ease-in;
+}
+
+.modal form input[type = "submit"]:hover{
+    cursor: pointer;
+    height: 52px;
+    width: 85%;
+    transition: .2s ease-in-out;
+}
+
+.modal form input[type = "button"]:hover{
+    cursor: pointer;
+    height: 52px;
+    width: 85%;
+    transition: .2s ease-in-out;
+}
+/* MODAL ADD */
+
+/* NOTA FISCAL */
+
+
+/* NOTA FISCAL CABEÇALHO */
+
+.fundo-fiscal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.botao-impressao{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.botao-impressao input[type="button"]{
+    position: relative;
+    height: 40px;
+    width: 16.2%;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px solid #988b7a;
+    outline: none;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.botao-impressao input[type="button"]:hover{
+    height: 45px;
+    width: 17%;
+    transition: .2s ease-in-out;
+}
+
+.fiscal-container {
+    width: 450px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.fiscal-cabecalho {
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+
+.fiscal-cabecalho h5 {
+    padding-top: 10px;
+}
+
+.fiscal-cabecalho h5:last-child {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+
+/* NOTA FISCAL CABEÇALHO */
+
+
+/* NOTA FISCAL HORARIO */
+
+.fiscal-horario {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed black;
+}
+
+
+/* NOTA FISCAL HORARIO */
+
+
+/* NOTA FISCAL TABELA */
+
+.fiscal-tabela {
+    border-bottom: 3px double black;
+    border-top: 3px double black;
+}
+
+.fiscal-tabela table,
+td,
+th {
+    border: 1px solid black;
+    font-size: small;
+}
+
+.fiscal-tabela table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* NOTA FISCAL TABELA */
+
+
+/* NOTA FISCAL FINAL */
+
+.fiscal-final {
+    border-top: 2px dashed black;
+}
+
+.fiscal-final h5 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+
+/* NOTA FISCAL FINAL */
+
+
+/* NOTA FISCAL */

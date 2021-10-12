@@ -1,0 +1,186 @@
+/* INICIO - Formulario Login / Formulario Registrar*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+
+.login{
+    height: 100vh; 
+    display: flex;
+    background-color: rgba(181, 181, 181, .2);
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container{
+    min-height: 400px;
+    width: 380px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 10px #9053c7 ;
+}
+
+.login_title{
+    margin-bottom: 32px;
+    color: #303030;
+}
+
+.login_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_input{
+    height: 48px;
+    width: 95%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+}
+
+.login_input-border{
+    height: 2px;
+    width: 95%;
+    margin-bottom: 16px;
+    background-color: #cfcfcf;
+    transition: .3s ease-in-out;
+}
+
+.login_input-border::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    margin-bottom: 16px;
+    background: linear-gradient(120deg,rgba(0,168,255,0.5),rgba(185,0,255,0.5));
+    transition: .3s ease-in-out;
+}
+
+.login_input:focus + .login_input-border::after{
+    width: 100%;
+}
+
+.login_input-border.error{
+    background: red;
+}
+
+.login_input-border.error::after{
+    background: red;
+}
+
+.login_submit{
+    height: 48px;
+    width: 100%;
+    outline: none;
+    background: linear-gradient(120deg, #E75590, #00C2CB, #E75590);
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.login_submit:disabled{
+    background: #acacac;
+    cursor: not-allowed
+}
+
+.login_submit:hover{
+    background-position: right;
+}
+
+
+.login_register{
+    font-size: 12px;
+    color: #929292;
+    text-decoration: none;
+}
+
+.login_register:last-of-type:hover{
+    color: black;
+}
+
+#show-hide{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    border: none;
+    top: 48%;
+    left: 60.5%;
+    background-color: #ffffff;
+    background: url(../imgs/show-password.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+#show-hide.hide{
+    background: url(../imgs/hide-password.png);
+    background-size: cover;
+}
+
+/* Fim - Formulario Login / Formulario Registrar */
+
+/* INICIO - Show Password do Formulario Registrar */
+
+#show-hide1{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    border: none;
+    top: 43%;
+    left: 60.5%;
+    background-color: #ffffff;
+    background: url(../IMG/show-password.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+#show-hide1.hide{
+    background: url(../IMG/hide-password.png);
+    background-size: cover;
+}
+
+
+#show-hide2{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    border: none;
+    top: 53%;
+    left: 60.5%;
+    background-color: #ffffff;
+    background: url(../IMG/show-password.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+#show-hide2.hide{
+    background: url(../IMG/hide-password.png);
+    background-size: cover;
+}
+
+
+
+/* FIM - Show Password do Formulario Registrar */
