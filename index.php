@@ -205,6 +205,9 @@ while ($dado = mysqli_fetch_assoc($OntempagAVAgoraResult)) {
             Debido: <input type="text" class="input-lucro D" value="R$ <?php echo str_replace(".", ",",$OntemlucroD); ?>">
             Dinheiro: <input type="text" class="input-lucro AV" value="R$ <?php echo str_replace(".", ",",$OntemlucroAV); ?>">
         </div>
+        <form action="process/logout.php" method="post">
+            <input type="submit" value="Logout" class="btn-logout">
+        </form>
     </div>
     <!-- CONTAINER LUCRO -->
 
