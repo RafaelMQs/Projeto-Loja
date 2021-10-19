@@ -151,13 +151,13 @@ body{
     top: 43%;
     left: 60.5%;
     background-color: #ffffff;
-    background: url(../IMG/show-password.png);
+    background: url(../imgs/show-password.png);
     background-size: cover;
     cursor: pointer;
 }
 
 #show-hide1.hide{
-    background: url(../IMG/hide-password.png);
+    background: url(../imgs/hide-password.png);
     background-size: cover;
 }
 
@@ -171,13 +171,13 @@ body{
     top: 53%;
     left: 60.5%;
     background-color: #ffffff;
-    background: url(../IMG/show-password.png);
+    background: url(../imgs/show-password.png);
     background-size: cover;
     cursor: pointer;
 }
 
 #show-hide2.hide{
-    background: url(../IMG/hide-password.png);
+    background: url(../imgs/hide-password.png);
     background-size: cover;
 }
 

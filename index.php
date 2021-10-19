@@ -8,6 +8,9 @@ $id = "SELECT id FROM logins WHERE usuario = '{$_SESSION['usuario']}'";
 $idresult = $conn->query($id) or die($conn->error);
 $rowid = mysqli_fetch_assoc($idresult);
 
+$login = "SELECT * FROM logins WHERE id = '{$rowid['id']}'";
+$loginResult = $conn->query($login) or die($conn->error);
+
 $tabela = "SELECT idProd, nomeProd, quantProd, valorProd FROM produtos WHERE idUsuario = '{$rowid['id']}'";
 $tabresult = $conn->query($tabela);
 date_default_timezone_set('America/Sao_Paulo');
@@ -294,11 +297,14 @@ while ($dado = mysqli_fetch_assoc($OntempagAVAgoraResult)) {
             <div class="fiscal-cabecalho">
                 <h5> GRATO PELA PREFERENCIA </h5>
                 <br>
+                <?php while ($dadoLoja = mysqli_fetch_assoc($loginResult)) { ?>
 
-                <h5> SINTONIA HOOKAH LOUNGE </h5>
-                <h5> RUA JEQUIRITURA N 929 </h5>
+                    <h5>  <?php echo $dadoLoja["nomeLoja"]; ?> </h5>
+                    <h5> <?php echo $dadoLoja["localLoja"]; ?> </h5>
                 
-                <h5> (11) 94680-3234 </h5>
+                    <h5> <?php echo $dadoLoja["telLoja"]; ?> </h5>
+
+                <?php } ?>
             </div>
             <div class="fiscal-horario">
                 <h5> CUPOM NÃO FISCAL </h5>
